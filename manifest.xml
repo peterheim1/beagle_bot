@@ -1,0 +1,19 @@
+<package>
+  <description brief="beagle_bot">
+
+     beagle_bot
+
+  </description>
+  <author>peter</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/beagle_bot</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="dynamixel_controllers"/>
+  <depend package="arbotix_python"/>
+  <depend package="diagnostic_msgs"/>
+</package>
+
+

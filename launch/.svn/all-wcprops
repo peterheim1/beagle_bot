@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/89/trunk/beagle_bot/launch
+END
+qbot.launch
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/89/trunk/beagle_bot/launch/qbot.launch
+END
+rviz.launch
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/89/trunk/beagle_bot/launch/rviz.launch
+END

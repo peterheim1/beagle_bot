@@ -1,0 +1,21 @@
+<launch>
+
+  <rosparam ns="/pi_remote">
+     map_file: /maps/test_map.png
+     max_linear_speed: 0.4
+     max_angular_speed: 1.5
+     turtlebot: False
+  </rosparam>
+
+  <include file="$(find rbx1_bringup)/launch/fake_pi_robot.launch" />
+
+  <node pkg="pi_remote" type="laptop_battery.py" name="laptop_battery" output="screen">
+     <param name="rate" value="1" />
+     <param name="battery_number" value="1" />
+  </node>
+
+  <node name="rosbridge" pkg="rosbridge" type="rosbridge.py" output="screen" />
+
+  <node name="mjpeg_server" pkg="mjpeg_server" type="mjpeg_server" output="screen" />
+  
+</launch>

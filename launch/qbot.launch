@@ -1,0 +1,17 @@
+<launch>
+       
+       <!-- Read in the URDF model of our robot. -->
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find beagle_bot)/urdf/qbot.xacro'" />
+    <param name="/use_sim_time" value="False" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+  
+<!---->
+    <node name="arbotix" pkg="arbotix_python" type="driver.py">
+       <rosparam file="$(find beagle_bot)/params/arbotix.yaml" command="load" />
+    </node>
+
+ 
+   
+</launch>

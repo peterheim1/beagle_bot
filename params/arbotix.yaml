@@ -1,0 +1,12 @@
+#port: /dev/serial/by-id/usb-Pololu_Corporation_Wixel_14-5D-1F-F2-if00   #ttyUSB0     #/dev/sensors/ftdi_A700eDQw #arbotix
+port: /dev/sensors/ftdi_A700eDQw    #/dev/ttyUSB0
+rate: 100
+read_rate: 50
+write_rate: 50
+sync_read: False
+sync_write: True
+controllers: {
+  
+  base_controller: {type: diff_controller, base_width: 0.26, ticks_meter: 8000, Kp: 12, Kd: 12, Ki: 0, Ko: 200, accel_limit: 2.0 }
+
+}
