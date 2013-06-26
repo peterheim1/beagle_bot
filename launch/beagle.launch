@@ -1,0 +1,11 @@
+<launch>
+       
+      <!-- omni_bot launch -->
+  <node name="arduino" pkg="beagle_bot" type="arduino1.py" output="screen">
+    <rosparam file="$(find beagle_bot)/config/ardros.yaml" command="load" />
+  </node>
+
+
+ 
+   
+</launch>
