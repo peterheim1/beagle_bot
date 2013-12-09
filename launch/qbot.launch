@@ -7,7 +7,7 @@
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
 
   
-<!---->
+<!--need to change this driver-->
     <node name="arbotix" pkg="arbotix_python" type="driver.py">
        <rosparam file="$(find beagle_bot)/params/arbotix.yaml" command="load" />
     </node>
