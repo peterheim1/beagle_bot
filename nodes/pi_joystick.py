@@ -21,7 +21,7 @@
     http://www.gnu.org/licenses/gpl.html
 """
 
-import roslib; roslib.load_manifest('pi_remote')
+
 import rospy
 from math import radians, pow
 
